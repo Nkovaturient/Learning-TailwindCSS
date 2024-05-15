@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*using apply directives to apply tailwindcss to our classes-avoid repetition*/
+.box{ /*highest priority for our own custom-css*/
+    @apply  text-white m-4 border-2 rounded;
+}
+
+.bold{
+    @apply text-black
+}
+.bg{
+    @apply bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white 
+}
+.card-container{
+    @apply flex justify-center items-center font-serif;
+}
